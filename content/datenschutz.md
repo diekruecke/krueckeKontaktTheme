@@ -47,8 +47,8 @@ Robin Schröter
 DieKruecke  
 Krähenburgstr. 23  
 7224 Singen am Htwl.  
-Telefon: {{< cloakemail address="+49 176 844 840 67" protocol="tel" >}}  
-E-Mail: {{< cloakemail "info@diekruecke.de" >}}  
+Telefon: {{< data_hide address="+49 176 844 840 67" protocol="tel" >}}  
+E-Mail: {{< data_hide "info@diekruecke.de" >}}  
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 

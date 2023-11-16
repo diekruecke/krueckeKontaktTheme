@@ -12,8 +12,8 @@ Krähenburgstr. 23
 7224 Singen am Htwl.  
 
 ## Kontakt
-Telefon: {{< cloakemail address="+49 176 844 840 67" protocol="tel" >}}  
-E-Mail: {{< cloakemail "info@diekruecke.de" >}}  
+Telefon: {{< data_hide address="+49 176 844 840 67" protocol="tel" >}}  
+E-Mail: {{< data_hide "info@diekruecke.de" >}}  
 
 ## Umsatzsteuer-ID
 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE325559560

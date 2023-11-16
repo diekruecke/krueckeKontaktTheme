@@ -2,11 +2,11 @@ baseURL = 'https://example.org/'
 languageCode = 'de-DE'
 title = 'DieKruecke'
 
-theme = [
-  "krueckeKontaktTheme",
-  "hugo-cloak-email",
-  "gohugo-shorturl",
-]
+# theme = [
+#   "krueckeKontaktTheme",
+#   "hugo-cloak-email",
+#   "gohugo-shorturl",
+# ]
 
 enableEmoji = false
 disableKinds = ["taxonomy", "term"]
