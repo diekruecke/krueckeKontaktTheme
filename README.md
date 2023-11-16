@@ -9,7 +9,7 @@
     ```shell
     git submodule add https://github.com/cljoly/gohugo-shorturl.git themes/gohugo-shorturl
     git submodule add https://github.com/martignoni/hugo-cloak-email.git themes/hugo-cloak-email
-    git submodule add https://github.com/jpanther/lynx.git themes/lynx
+    git submodule add https://github.com/diekruecke/krueckeKontaktTheme.git themes/krueckeKontaktTheme
     ```
 
 2. Config
@@ -29,8 +29,8 @@
 ### Git Submodule deinstallieren
 
     ```shell
-    git submodule deinit themes/gohugo-shorturl
-    git rm themes/gohugo-shorturl
+    git submodule deinit themes/krueckeKontaktTheme
+    git rm themes/krueckeKontaktTheme
     ```
 
 
