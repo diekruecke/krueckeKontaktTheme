@@ -39,7 +39,7 @@ copyright = "&copy; 2023 DieKruecke | [Impressum](/impressum) | [Datenschutzerkl
 [module]
   [module.hugoVersion]
     extended = true
-    min = "v0.116.0"
+    min = "0.116.0"
 
 [markup.highlight]
   noClasses = false
