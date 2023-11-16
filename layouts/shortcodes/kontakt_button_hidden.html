@@ -1,0 +1,54 @@
+{{ $href := "" }}
+{{ $type := .Get ( "type" ) }}
+{{ $icon := .Get ( "type" ) }}
+{{ $text := "" }}
+{{ $target := "_blank" }}
+{{ $title := "" }}
+{{ $hiddenmail := "" }}
+{{ $protocol := "mailto" }}
+{{ $query := "" }}
+{{ $link_icon := "" }}
+
+{{- with .Get ( "href" ) -}}{{ $href = . }}{{- end -}}
+{{- with .Get ( "icon" ) -}}{{ $icon = . }}{{- end -}}
+{{- with .Get ( "text" ) -}}{{ $text = . }}{{- end -}}
+{{- with .Get ( "target" ) -}}{{ $target = . }}{{- end -}}
+{{- with .Get ( "title" ) -}}{{ $title = . }}{{- end -}}
+
+{{ $parts := split $href "@" }}
+{{ $user := (index $parts 0) }}
+{{ $domain := (index $parts 1) | default "" }}
+
+{{/* Compute md5 fingerprint */}}
+{{ $fingerprint := md5 (print $href $protocol (index (seq 999 | shuffle) 0)) | truncate 8 "" }}
+
+{{/* Set via CSS what is displayed when Javascript is disabled. Query is never displayed */}}
+<style>
+  #span-{{ $fingerprint }}.cloaked-e-mail:before {
+    content:{{ with $domain }}attr(data-domain) "\0040" {{ end }}attr(data-user);
+    unicode-bidi:bidi-override;
+    direction:rtl;
+  }
+</style>
+
+<div class="link_box">
+
+  <span class="cloaked-e-mail" data-user="{{ range $index := seq (sub (len $user) 1) 0}}{{ substr $user $index 1}}{{ end }}"{{ with $domain }} data-domain="{{ range $index := seq (sub (len $domain) 1) 0}}{{ substr $domain $index 1}}{{ end }}"{{ end }} id="span-{{ $fingerprint }}"></span>&#32;
+  {{/* Alter display with Javascript by changing DOM */}}
+  <script id="script-{{ $fingerprint }}">
+    var scriptTag = document.getElementById("script-{{ $fingerprint }}");
+    var link = document.createElement("a");
+    var address = "{{ range $index := seq (sub (len $user) 1) 0}}{{ substr $user $index 1}}{{ end }}".split('').reverse().join(''){{ with $domain }} + "@" + "{{ range $index := seq (sub (len $domain) 1) 0}}{{ substr $domain $index 1}}{{ end }}".split('').reverse().join(''){{ with $query }} + "?" + "{{ range $index := seq (sub (len $query) 1) 0}}{{ substr $query $index 1}}{{ end }}".split('').reverse().join(''){{ end }}{{ end }};
+    
+    link.href = {{ $protocol }} + ":" + address;
+  
+    link.innerHTML = "<span class='icon-mr1'>" + {{ partial "icon.html" $icon }} + "</span>" + {{ $text }};
+  
+    link.className = "link link-{{ $type }}";
+  
+    link.rel = "me noopener noreferrer";
+  
+    scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
+    scriptTag.parentElement.removeChild(scriptTag.previousElementSibling);
+  </script>
+</div>

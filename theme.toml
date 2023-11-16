@@ -1,0 +1,14 @@
+# Lynx theme for Hugo
+
+name = "krueckeKontaktTheme"
+license = "MIT"
+licenselink = ""
+description = "Hugo KontaktPage Theme für meine Kontaktpages"
+
+homepage = "https://github.com/diekruecke/krueckeKontaktTheme"
+demosite = "https://www.diekruecke.de/"
+
+[author]
+  name = "DieKruecke"
+  homepage = "https://www.diekruecke.de"
+

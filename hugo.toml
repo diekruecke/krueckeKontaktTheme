@@ -1,0 +1,52 @@
+baseURL = 'https://example.org/'
+languageCode = 'de-DE'
+title = 'DieKruecke'
+
+theme = [
+  "krueckeKontaktTheme",
+  "hugo-cloak-email",
+  "gohugo-shorturl",
+]
+
+enableEmoji = false
+disableKinds = ["taxonomy", "term"]
+
+enableGitInfo = true
+copyright = "&copy; 2023 DieKruecke | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
+
+[params]
+  image = "author.jpg"
+  name = "Robin Schröter"
+  subtitle = "Tontechnik | Touring | Projektleitung | South Germany"
+  socialmedia_hinweis = "SocialMedia wird nicht aktiv genutzt"
+
+[params.style]
+  primary= "#2563eb"
+  secondary= "#ea580c"
+
+  neutral_50= "#fafafa"
+  neutral_100= "#f5f5f5"
+  neutral_200= "#e5e5e5"
+  neutral_300= "#d4d4d4"
+  neutral_400= "#a3a3a3"
+  neutral_500= "#737373"
+  neutral_600= "#525252"
+  neutral_700= "#404040"
+  neutral_800= "#262626"
+  neutral_900= "#171717"
+  neutral_950= "#0a0a0a"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "v0.116.0"
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[frontmatter]
+  lastmod = ['lastmod', ':fileModTime', ':default']

@@ -1,0 +1,141 @@
+@use "hugo:vars" as var;
+
+html {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+}
+
+body {
+  color: var.$neutral_100;
+  background-color: var.$neutral_900;
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin: auto;
+  text-align: center;
+  min-width: 260px;
+  max-width: 80%;
+}
+
+div.header-home {
+  // border: 1px solid var.$neutral_100;
+  margin-top: 12rem;
+  margin-bottom: 10px;
+}
+
+div.header-single {
+  // border: 1px solid var.$neutral_100;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  margin: auto;
+  max-width: 80%;
+  min-width: 400px;
+}
+
+div.header-single p {
+  // border: 1px solid var.$neutral_100;
+  text-align: left;
+}
+
+div.single_page {
+  text-align: left;
+  margin: auto;
+  max-width: 80%;
+  min-width: 400px;
+}
+
+main {
+  // border: 1px solid var.$neutral_100;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  // border: 1px solid var.$neutral_100;
+  margin: 10px 0px;
+  font-size: 0.7rem;
+}
+
+div.link_box {
+  margin: auto;
+  max-width: 380px;
+  min-width: 260px;
+  margin-bottom: 0.75rem;
+}
+
+.link {
+  padding: 0.5rem 0.5rem;
+
+  min-width: 30%;
+
+  display: block;
+
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var.$neutral_100;
+}
+
+a {
+  color: var.$primary;
+  text-decoration: none;
+}
+
+p.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+
+  color: var.$neutral_100;
+
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+p.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+
+  color: var.$neutral_400;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+p.socialmedia_hinweis {
+  color: var.$neutral_400;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+p.lastedit {
+  color: var.$neutral_400;
+  font-size: 0.5rem;
+}
+
+p.footer, p.footer a {
+  color: var.$neutral_400;
+}
+
+.icon-mr1 {
+  margin-right: 0.05rem;
+}
+
+.icon {
+  vertical-align: text-bottom;
+  display: inline-block;
+  position: relative;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.icon svg {
+  height: 1em;
+  width: 1em;
+  display: block;
+}
+
+img.kontakt {
+  border-radius: 9999px;
+  margin-bottom: 0rem;
+}

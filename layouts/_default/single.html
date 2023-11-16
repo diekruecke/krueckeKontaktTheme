@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="single_page">
+    {{ .Content }}
+
+    <p class="lastedit">
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format "1 Jan 2006 um 15:04 Uhr" }}
+      Diese Seite wurde erstellt am <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    
+      {{ $dateMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Lastmod | time.Format "1 Jan 2006 um 15:04 Uhr" }}
+      und zuletzt modifiziert am: <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </p>
+  </div>
+{{ end }}

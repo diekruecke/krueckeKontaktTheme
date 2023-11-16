@@ -1,0 +1,33 @@
+{{ if .IsHome }}
+  <div class="header-home">
+    {{ with .Site.Params.image }}
+    {{ $src := . }}
+    {{ $resource := "" }}
+    {{ if $.Page.Resources.GetMatch $src }}
+      {{ $resource = $.Page.Resources.GetMatch $src }}
+    {{ else if resources.GetMatch $src }}
+      {{ $resource = resources.Get $src }}
+    {{ end }}
+    {{ with $resource }}
+      {{ $src = (.Fill "400x400 Center").RelPermalink }}
+    {{ end }}
+    <img
+      class="kontakt"
+      width="200"
+      height="200"
+      alt="{{ $.Site.Params.name | default "Author" }}"
+      src="{{ $src }}"
+    />
+    {{ end }}
+    <p class="title">{{ site.Title }}</p>
+    <p class="subtitle">{{ site.Params.subtitle }}</p>
+    <p class="socialmedia_hinweis">{{ .Site.Params.socialmedia_hinweis }}</p>
+  </div>
+{{ else }}
+  <div class="header-single">
+    <p class="title">
+      <a href="/">←</a>
+      {{ .Title }}
+    </p>
+  </div>
+{{ end }}
