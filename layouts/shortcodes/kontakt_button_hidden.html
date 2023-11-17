@@ -31,7 +31,7 @@
   }
 </style>
 
-<div class="link_box">
+{{/*  <div class="link_box">  */}}
 
   <span class="cloaked-e-mail" data-user="{{ range $index := seq (sub (len $user) 1) 0}}{{ substr $user $index 1}}{{ end }}"{{ with $domain }} data-domain="{{ range $index := seq (sub (len $domain) 1) 0}}{{ substr $domain $index 1}}{{ end }}"{{ end }} id="span-{{ $fingerprint }}"></span>&#32;
   {{/* Alter display with Javascript by changing DOM */}}
@@ -51,4 +51,4 @@
     scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
     scriptTag.parentElement.removeChild(scriptTag.previousElementSibling);
   </script>
-</div>
+{{/*  </div>  */}}

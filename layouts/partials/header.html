@@ -19,7 +19,10 @@
       src="{{ $src }}"
     />
     {{ end }}
-    <p class="title">{{ site.Title }}</p>
+    <div class="title_area">
+      <div class="title_box"><p class="title">{{ site.Title }}</p></div>
+      <div class="title_name"><p class="name">{{ site.Params.name }}</p></div>
+    </div>
     <p class="subtitle">{{ site.Params.subtitle }}</p>
     <p class="socialmedia_hinweis">{{ .Site.Params.socialmedia_hinweis }}</p>
   </div>
