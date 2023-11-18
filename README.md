@@ -26,6 +26,12 @@
 
 4. Ersetze die `config.toml` mit der config Datei: [download a copy]( DOWNLOADLINK https://minhaskamal.github.io/DownGit/#/home ) .
 
+### Git Submodule aktualisieren
+
+    ```shell
+    git submodule update --remote
+    ```
+
 ### Git Submodule deinstallieren
 
     ```shell
