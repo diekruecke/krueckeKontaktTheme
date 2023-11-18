@@ -8,8 +8,6 @@ draft = false
 {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
 {{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
 {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
-
 {{< kontakt_button type="vcard" href="/vcard/robin_schroeter.vcf" text="Kontakt Importieren" >}} <!-- APPLE -->
 {{< kontakt_button type="vcard" href="/vcard/vcard-test.vcf" text="Kontakt Importieren" >}} <!-- Android/Universell -->
-
 {{< kontakt_button type="kontaktpage" href="/l/dc" text="Business Kontaktdaten" >}}

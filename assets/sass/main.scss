@@ -94,8 +94,8 @@ footer {
 .link_box {
   margin: auto;
   
-  min-width: 260px;
-  max-width: 380px;
+  // min-width: 260px;
+  // max-width: 380px;
 
   padding: 1rem;
 
@@ -116,9 +116,10 @@ footer {
   margin: auto;
   margin-bottom: 0.75rem;
 
-  width: fit-content;
+  // width: fit-content;
 
   min-width: 260px;
+  max-width: 300px;
 }
 
 a {
