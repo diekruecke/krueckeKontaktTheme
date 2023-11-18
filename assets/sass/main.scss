@@ -32,18 +32,18 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .title {
-    background-color: green;
-  }
+  // .title {
+  //   background-color: green;
+  // }
   .css_body{
     margin-top: 14%;
   }
 }
 /* On screens that are 600px or less, set the background color to olive */
 @media only screen and (max-width: 600px) {
-  .title {
-    background-color: blue;
-  }
+  // .title {
+  //   background-color: blue;
+  // }
   .css_body{
     margin-top: 5rem;
   }
