@@ -5,17 +5,15 @@
 {{ $text := .Get ( "text" ) }}
 {{ $icon := .Get ( "type" ) }}
 
-{{/*  <div class="link_box">  */}}
-  <a
-    class="link link-{{ $type }}"
-    href="{{ $href }}"
-    target="{{ $target }}"
-    {{ with $title }}title="{{ . }}"{{ end }}
-    rel="me noopener noreferrer"
-  >
-    {{- with $icon -}}
-      <span class='icon-mr1'>{{ partial "icon.html" . }}</span>
-    {{- end -}}
-    {{ $text | emojify }}
-  </a>
-{{/*  </div>  */}}
+<a
+  class="link link-{{ $type }}"
+  href="{{ $href }}"
+  target="{{ $target }}"
+  {{ with $title }}title="{{ . }}"{{ end }}
+  rel="me noopener noreferrer"
+>
+  {{- with $icon -}}
+    <span class='icon-mr1'>{{ partial "icon.html" . }}</span>
+  {{- end -}}
+  {{ $text | emojify }}
+</a>

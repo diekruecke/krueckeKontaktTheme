@@ -1,0 +1,31 @@
+{{ $type := .Get ( "type" ) }}
+{{ $href := .Get ( "href" ) }}
+{{ $target := .Get ( "target" ) }}
+{{ $title := .Get ( "title" ) }}
+{{ $text := .Get ( "text" ) }}
+{{ $icon := .Get ( "type" ) }}
+<script>
+  function appleOrNot() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|Mac|iPod/.test(userAgent) && !window.MSStream) {
+      window.location = "/vcard/robin_schroeter_apple.vcf";
+    } else {
+      window.location = "/vcard/robin_schroeter.vcf";
+    }
+  }
+  console.log("Plattform: " + navigator.platform);
+</script>
+<a
+  class="link link-{{ $type }}"
+  href="javascript:void(0)"
+  onclick="appleOrNot()"
+  target="{{ $target }}"
+  {{ with $title }}title="{{ . }}"{{ end }}
+  rel="me noopener noreferrer"
+>
+  {{- with $icon -}}
+    <span class='icon-mr1'>{{ partial "icon.html" . }}</span>
+  {{- end -}}
+  {{ $text | emojify }}
+</a>
