@@ -2,25 +2,21 @@
 
 ## Features
 
-## Installation
+## Installation / Einrichtung
 
-1. Git Submodule installieren
+1. Hugo Mod init
 
-    ```shell
-    git submodule add https://github.com/cljoly/gohugo-shorturl.git themes/gohugo-shorturl
-    git submodule add https://github.com/martignoni/hugo-cloak-email.git themes/hugo-cloak-email
-    git submodule add https://github.com/diekruecke/krueckeKontaktTheme.git themes/krueckeKontaktTheme
-    ```
+  ```shell
+  hugo mod init github.com/diekruecke/cloudflare-kontakt-diekruecke-de
 
-2. Config
+  hugo mod get -u -v joly.pw/gohugo-shorturl
+  ```
 
-    ```toml
-    theme = [
-      "krueckeKontaktTheme",
-      "hugo-cloak-email",
-      "gohugo-shorturl",
-    ]
-    ```
+2. Git Submodule init
+
+  ```bash
+  git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
+  ```
 
 3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
 
@@ -28,16 +24,16 @@
 
 ### Git Submodule aktualisieren
 
-    ```shell
-    git submodule update --remote
-    ```
+  ```shell
+  git submodule update --remote
+  ```
 
 ### Git Submodule deinstallieren
 
-    ```shell
-    git submodule deinit themes/krueckeKontaktTheme
-    git rm themes/krueckeKontaktTheme
-    ```
+  ```shell
+  git submodule deinit themes/krueckeKontaktTheme
+  git rm themes/krueckeKontaktTheme
+  ```
 
 
 ## Configuration
