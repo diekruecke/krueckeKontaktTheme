@@ -7,7 +7,7 @@
 1. Hugo Mod init
 
   ```shell
-  hugo mod init github.com/diekruecke/cloudflare-kontakt-diekruecke-de
+  hugo mod init github.com/diekruecke/krueckeKontaktTheme
 
   hugo mod get -u -v joly.pw/gohugo-shorturl
   ```

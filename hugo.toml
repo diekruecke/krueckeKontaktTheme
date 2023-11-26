@@ -13,7 +13,7 @@ copyright = "&copy; 2023 DieKruecke | [Impressum](/impressum) | [Datenschutzerkl
 [params]
   image = "author.jpg"
   name = "Robin Schröter"
-  subtitle = "Tontechnik | Touring | Projektleitung | South Germany"
+  subtitle = "Tontechnik | Touring | Projektleitung"
   socialmedia_hinweis = "SocialMedia wird nicht aktiv genutzt"
 
 [params.style]
@@ -35,7 +35,10 @@ copyright = "&copy; 2023 DieKruecke | [Impressum](/impressum) | [Datenschutzerkl
 [module]
   [module.hugoVersion]
     extended = true
-    min = "v0.119.0"
+    min = "v0.120.4"
+
+  [[module.imports]]
+    path = "joly.pw/gohugo-shorturl"
 
 [markup.highlight]
   noClasses = false

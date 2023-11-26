@@ -9,5 +9,5 @@ draft = false
 {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
 {{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
 {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
-{{< kontakt_button_vcard type="vcard" href="/vcard/deine_vcard.vcf" text="Kontakt Importieren" >}}
+{{< kontakt_button_vcard type="vcard" text="Kontakt Importieren" >}}
 {{< kontakt_button type="kontaktpage" href="https://www.diekruecke.de" text="Business Kontaktdaten" >}}
