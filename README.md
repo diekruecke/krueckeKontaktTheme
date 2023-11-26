@@ -46,7 +46,10 @@ Kontaktdaten vor Bot's verstecken
 
 ### Optional parameters
 
-- Use `protocol` to specify the protocol: `{{< cloakemail address="jane.doe@example.com" protocol="xmpp" >}}` or `{{< cloakemail address="+1 212 664-7665" protocol="tel" >}}`
-- Use `display` to display any text on the page instead of the address: `{{< cloakemail address="jane.doe@example.com" display="Send us a mail!" >}}`
-- Use `class` to indicate CSS classes to use: `{{< cloakemail address="jane.doe@example.com" class="vip company-a" >}}`
-- Use `query` to specify a e-mail subject or other URI parameters (URI query): `{{< cloakemail address="jane.doe@example.com" query="subject=Message from contact form" >}}`. The query is never printed on the web page.
+```
+<svg viewBox="0 0 XX_width_XX XX_height_XX" version="1.1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="font-awesome-flag" class="svg-inline--fa fa-font-awesome-flag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg">
+  <path fill="currentColor" d="XXXXX"/>
+</svg>
+```
+
+<svg viewBox="0 0 29.2546 27.2269" version="1.1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="font-awesome-flag" class="svg-inline--fa fa-font-awesome-flag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg">
