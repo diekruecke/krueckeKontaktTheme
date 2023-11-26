@@ -2,15 +2,19 @@
 
 .link-vcard {
   background: rgb(0,0,255);
-  background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,151,255,1) 100%);
+  background: linear-gradient(45deg, rgba(0,0,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,151,255,1) 100%);
 }
 .link-kontaktpage {
   background: rgb(0,151,255);
-  background: linear-gradient(90deg, rgba(0,151,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,0,255,1) 100%);
+  background: linear-gradient(45deg, rgba(0,151,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,0,255,1) 100%);
 }
 .link-hiddenemail {
   background: rgb(0,151,255);
-  background: linear-gradient(90deg, rgba(0,151,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,0,255,1) 100%);
+  background: linear-gradient(45deg, rgba(0,151,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,0,255,1) 100%);
+}
+.link-hiddenphone {
+  background-color: #45d82c;
+  background: linear-gradient(120deg, #45d82c, #12990b);
 }
 .link-amazon {
   color: var.$neutral_900;

@@ -16,34 +16,28 @@ body {
   font-family: sans-serif;
   font-size: 1rem;
 
-  min-width: 260px;
+  display: block;
 }
 
 .css_body{
-  min-width: 260px;
+  min-width: 17rem;
 
   max-width: 80%;
 
   margin: auto;
   text-align: center;
 
-  margin-top: 165px;
+  margin-top: 128px;
 
 }
 
-@media only screen and (max-width: 1200px) {
-  // .title {
-  //   background-color: green;
-  // }
+@media only screen and (max-width: 930px) {
   .css_body{
     margin-top: 14%;
   }
 }
 /* On screens that are 600px or less, set the background color to olive */
 @media only screen and (max-width: 600px) {
-  // .title {
-  //   background-color: blue;
-  // }
   .css_body{
     margin-top: 5rem;
   }
@@ -120,6 +114,13 @@ footer {
 
   min-width: 260px;
   max-width: 300px;
+  filter: brightness(100%);
+
+  transition: all 0.1s ease-in-out;
+}
+
+.link:hover {
+  filter: brightness(80%);
 }
 
 a {

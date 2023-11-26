@@ -5,6 +5,7 @@ draft = false
 +++
 
 {{< kontakt_button_hidden type="hiddenemail" href="deine@email.de" text="E-Mail" >}}
+{{< kontakt_button_hidden type="hiddenphone" protocol="tel" href="+1234567890123" text="Mobile" >}}
 {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
 {{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
 {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}

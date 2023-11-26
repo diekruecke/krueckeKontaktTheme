@@ -14,6 +14,7 @@
 {{- with .Get ( "text" ) -}}{{ $text = . }}{{- end -}}
 {{- with .Get ( "target" ) -}}{{ $target = . }}{{- end -}}
 {{- with .Get ( "title" ) -}}{{ $title = . }}{{- end -}}
+{{- with .Get ( "protocol" ) -}}{{ $protocol = . }}{{- end -}}
 
 {{ $parts := split $href "@" }}
 {{ $user := (index $parts 0) }}
