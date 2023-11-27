@@ -8,6 +8,7 @@ draft = true
   .lastedit, .subtitle, .template_hinweis {
     text-align: center;
   }
+
   .link-email_down, .link-phone_down, .link-contact_down {
     background: blue;
   }
@@ -19,6 +20,19 @@ draft = true
   }
   .link-email_circle_full_down, .link-phone_circle_full_down, .link-contact_circle_full_down {
     background: grey;
+  }
+
+  .link-email_down svg, .link-email_full_down svg, .link-email_circle_down svg, .link-email_circle_full_down svg {
+    font-size: 1.6rem;
+    transform: translate(0,1px);
+  }
+  .link-phone_down svg, .link-phone_full_down svg, .link-phone_circle_down svg, .link-phone_circle_full_down svg {
+    font-size: 1.8rem;
+    transform: translate(0,1px);
+  }
+  .link-contact_down svg, .link-contact_full_down svg, .link-contact_circle_down svg, .link-contact_circle_full_down svg {
+    font-size: 2rem;
+    transform: translate(0,1px);
   }
 </style>
 

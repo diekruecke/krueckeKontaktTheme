@@ -84,13 +84,7 @@ footer {
 
 .link_box {
   margin: auto;
-  
-  // min-width: 260px;
-  // max-width: 380px;
-
   padding: 1rem;
-
-  // border: 1px solid var.$neutral_100;
 }
 
 .link {
@@ -111,6 +105,9 @@ footer {
 
   min-width: 260px;
   max-width: 300px;
+
+  height: 28px;
+
   filter: brightness(100%);
 
   transition: all 0.1s ease-in-out;
@@ -198,19 +195,20 @@ p.footer, p.footer a {
   display: inline-block;
   position: relative;
 
-  font-size: 1.125rem;
-  line-height: 1.125rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .icon svg {
   height: 1em;
   width: 1em;
   display: block;
+  transform: translate(0,2px);
 }
 
 .apple_svg {
-  font-size: 1.6rem;
-  transform: translate(0,1px);
+  font-size: 2rem;
+  transform: translate(0,0px);
 }
 
 img.kontakt {
