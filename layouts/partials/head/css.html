@@ -33,3 +33,16 @@
     {{ end }}
   {{ end }}
 {{ end }}
+
+{{ with resources.Get "sass/test.scss" }}
+  {{ $opts := dict "targetPath" "css/test.css" "transpiler" "dartsass" "vars" site.Params.style }}
+  {{ with . | toCSS $opts }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -10,6 +10,8 @@ disableKinds = ["taxonomy", "term"]
 enableGitInfo = true
 copyright = "&copy; 2023 DieKruecke | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
 
+buildDrafts = true
+
 [params]
   image = "author.jpg"
   name = "Robin Schröter"

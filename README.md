@@ -47,9 +47,10 @@ Kontaktdaten vor Bot's verstecken
 ### Optional parameters
 
 ```
-<svg viewBox="0 0 XX_width_XX XX_height_XX" version="1.1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="font-awesome-flag" class="svg-inline--fa fa-font-awesome-flag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" d="XXXXX"/>
+<svg viewBox="0 0 XX_width_XX XX_height_XX" class="apple_svg" version="1.1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path d="XXX"/>
+    <path d="XXX"/>
+  </g>
 </svg>
 ```
-
-<svg viewBox="0 0 29.2546 27.2269" version="1.1" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="font-awesome-flag" class="svg-inline--fa fa-font-awesome-flag fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg">
