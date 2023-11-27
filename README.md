@@ -1,5 +1,15 @@
 # krueckeKontaktTheme
 
+https://ileriayo.github.io/markdown-badges/
+https://github-readme-stats.vercel.app/
+
+<a href="https://github.com/diekruecke">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=diekruecke&show_icons=true?theme=dark" />
+</a>
+<a href="https://github.com/diekruecke">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=diekruecke&layout=compact" />
+</a>
+
 ## Installation / Einrichtung
 
 1. Hugo Mod init
