@@ -1,103 +1,123 @@
 # krueckeKontaktTheme
 
-## Features
-
 ## Installation / Einrichtung
 
 1. Hugo Mod init
 
-  ```shell
-  hugo mod init github.com/diekruecke/krueckeKontaktTheme
+    ```shell
+    hugo mod init github.com/diekruecke/krueckeKontaktTheme
 
-  hugo mod get -u -v joly.pw/gohugo-shorturl
-  ```
+    hugo mod get -u -v joly.pw/gohugo-shorturl
+    ```
 
 2. Git Submodule init
 
-  ```bash
-  git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
-  ```
+    ```bash
+    git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
+    ```
 
 3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
 
-4. Ersetze die `config.toml` mit der config Datei: [download a copy]( DOWNLOADLINK https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ) .
+4. Ersetze die `config.toml` mit der config Datei: [DOWNLOAD]( https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ).
 
 5. Überprüfe ob der Modul-Import richtig eingetragen ist
 
-  ```yaml
-  [module]
-    [[module.imports]]
-      path = "joly.pw/gohugo-shorturl"
-  ```
-### Git Submodule aktualisieren
+    ```yaml
+    [module]
+      [[module.imports]]
+        path = "joly.pw/gohugo-shorturl"
+    ```
 
-  ```shell
-  git submodule update --remote
-  ```
+## Terminal
 
-### Git Submodule deinstallieren
+Starte lokalen DEV Server inkl. Erreichbarkeit via LAN
+```zsh
+hugo server --bind 0.0.0.0 
+```
 
-  ```shell
-  git submodule deinit themes/krueckeKontaktTheme
-  git rm themes/krueckeKontaktTheme
-  ```
+Git Submodule aktualisieren
+```zsh
+git submodule update --remote  
+```
 
-## Features
+Git Submodule deinstallieren
+```zsh
+git submodule deinit themes/krueckeKontaktTheme
+git rm themes/krueckeKontaktTheme
+```
 
-#### Buttons
+## Buttons
 
-  ```markdown
-  EMail
-  {{< kontakt_button_hidden type="email" href="deine@email.de" text="E-Mail" >}}
+### Standard Buttons
+<details>
+<summary>show / hide</summary>
 
-  Telefon
-  {{< kontakt_button_hidden type="phone" protocol="tel" href="+1234567890123" text="Mobile" >}}
+```go
+Whatsapp
+{{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
 
-  Whatsapp
-  {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
+Instagram
+{{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
 
-  Instagram
-  {{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
+Discord
+{{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
 
-  Discord
-  {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
+Facebook
+{{< kontakt_button type="facebook" href="/l/fb" text="Facebook" >}}
 
-  Facebook
-  {{< kontakt_button type="facebook" href="/l/fb" text="Facebook" >}}
+Twitch
+{{< kontakt_button type="twitch" href="/l/tw" text="Twitch" >}}
 
-  Twitch
-  {{< kontakt_button type="twitch" href="/l/tw" text="Twitch" >}}
+Youtube
+{{< kontakt_button type="youtube" href="/l/yt" text="Youtube" >}}
 
-  Youtube
-  {{< kontakt_button type="youtube" href="/l/yt" text="Youtube" >}}
+Link
+{{< kontakt_button type="link" href="https://www.diekruecke.de/" text="Private Kontaktdaten" >}}
+{{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}
+```
+</details>
 
-  VCard Download
-  {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
+### EMail & Telefon -> Bot Sicher
+<details>
+<summary>show / hide</summary>
 
-  Link
-  {{< kontakt_button type="link" href="https://www.diekruecke.de/" text="Private Kontaktdaten" >}}
-  {{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}
-  ```
+```toml
+EMail 
+{{< kontakt_button_hidden type="email" href="deine@email.de" text="E-Mail" >}}
 
-##### V-Card Download - Abhängig von UserPlattform
+Telefon
+{{< kontakt_button_hidden type="phone" protocol="tel" href="+1234567890123" text="Mobile" >}}
+```
+</details>
 
-###### Code Block
-  ```markdown
-  VCard Download
-  {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
-  ```
+### V-Card
+<details>
+<summary>show / hide</summary>
 
-###### V-Card Speicherort
+#### Code Block
+```go
+{{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
+```
 
-  VCard für Apple Systeme (iPhone, iPad, iPod, Mac)
-  ```markdown
-  /vcard/robin_schroeter_apple.vcf
-  ```
+#### V-Card Speicherort
 
-  VCard für alle sonstigen Systeme (Windows, Android, alles was nicht als Apple erkannt wird)
-  ```markdown
-  /vcard/robin_schroeter.vcf
-  ```
+<details>
+<summary>VCard für Apple Systeme (iPhone, iPad, iPod, Mac)</summary>
+```markdown
+/vcard/robin_schroeter_apple.vcf
+```
+</details>
+
+<details>
+<summary>VCard für alle sonstigen Systeme (Windows, Android, alles was nicht als Apple erkannt wird)</summary>
+```markdown
+/vcard/robin_schroeter.vcf
+```
+</details>
+
+</details>
+
+
 
 ### Kontaktdaten vor Bot's verstecken  
 
