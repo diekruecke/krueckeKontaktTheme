@@ -9,6 +9,9 @@ draft = false
 {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
 {{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
 {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
+{{< kontakt_button type="facebook" href="/l/fb" text="Facebook" >}}
+{{< kontakt_button type="twitch" href="/l/tw" text="Twitch" >}}
+{{< kontakt_button type="youtube" href="/l/yt" text="Youtube" >}}
 {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
-{{< kontakt_button type="kontaktpage" href="https://www.diekruecke.de" text="Business Kontaktdaten" >}}
+{{< kontakt_button type="link" href="https://www.diekruecke.de/" text="Private Kontaktdaten" >}}
 {{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}

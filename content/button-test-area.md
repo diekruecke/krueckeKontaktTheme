@@ -8,46 +8,6 @@ draft = true
   .lastedit, .subtitle, .template_hinweis {
     text-align: center;
   }
-
-  .link-email_down, .link-phone_down, .link-contact_down {
-    background: blue;
-  }
-  .link-email_full_down, .link-phone_full_down, .link-contact_full_down {
-    background: green;
-  }
-  .link-email_circle_down, .link-phone_circle_down, .link-contact_circle_down {
-    background: darkorange;
-  }
-  .link-email_circle_full_down, .link-phone_circle_full_down, .link-contact_circle_full_down {
-    background: grey;
-  }
-
-  .link-email_down svg, .link-email_full_down svg, .link-email_circle_down svg, .link-email_circle_full_down svg {
-    font-size: 1.6rem;
-    transform: translate(0,1px);
-  }
-  .link-phone_down svg, .link-phone_full_down svg, .link-phone_circle_down svg, .link-phone_circle_full_down svg {
-    font-size: 1.8rem;
-    transform: translate(0,1px);
-  }
-  .link-contact_down svg, .link-contact_full_down svg, .link-contact_circle_down svg, .link-contact_circle_full_down svg {
-    font-size: 2rem;
-    transform: translate(0,1px);
-  }
 </style>
 
-{{< kontakt_button_hidden type="email_down" href="deine@email.de" text="icon_down" >}}
-{{< kontakt_button_hidden type="phone_down" protocol="tel" href="+1234567890123" text="icon_down" >}}
-{{< kontakt_button href="#" type="contact_down" text="icon_down" >}}
-
-{{< kontakt_button_hidden type="email_full_down" href="deine@email.de" text="icon_full_down" >}}
-{{< kontakt_button_hidden type="phone_full_down" protocol="tel" href="+1234567890123" text="icon_full_down" >}}
-{{< kontakt_button href="#" type="contact_full_down" text="icon_full_down" >}}
-
-{{< kontakt_button_hidden type="email_circle_down" href="deine@email.de" text="icon_circle_down" >}}
-{{< kontakt_button_hidden type="phone_circle_down" protocol="tel" href="+1234567890123" text="icon_circle_down" >}}
-{{< kontakt_button href="#" type="contact_circle_down" text="icon_circle_down" >}}
-
-{{< kontakt_button_hidden type="email_circle_full_down" href="deine@email.de" text="icon_circle_full_down" >}}
-{{< kontakt_button_hidden type="phone_circle_full_down" protocol="tel" href="+1234567890123" text="icon_circle_full_down" >}}
-{{< kontakt_button href="#" type="contact_circle_full_down" text="icon_circle_full_down" >}}
+{{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}

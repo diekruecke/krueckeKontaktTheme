@@ -20,9 +20,8 @@ buildDrafts = true
   subtitle = "Tontechnik | Touring | Projektleitung"
   socialmedia_hinweis = "SocialMedia wird nicht aktiv genutzt"
 
-  # umkommentieren
-  # template_hinweis = ""
-  template_hinweis = "-- ICH BIN DER DEV/TEMPLATE BUILD --"
+  # change to false
+  template_hinweis = true
 
 [params.style]
   primary= "#2563eb"

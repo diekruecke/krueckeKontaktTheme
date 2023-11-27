@@ -3,3 +3,11 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
+
+{{ with site.Params.template_hinweis }}
+  <style>
+    body {
+      background-color: grey;
+    }
+  </style>
+{{ end }}

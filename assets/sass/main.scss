@@ -27,21 +27,23 @@ body {
   margin: auto;
   text-align: center;
 
-  margin-top: 128px;
+  margin-top: 70px;
 
+  background-color: var.$neutral_900;
 }
 
-@media only screen and (max-width: 930px) {
-  .css_body{
-    margin-top: 14%;
-  }
-}
-/* On screens that are 600px or less, set the background color to olive */
-@media only screen and (max-width: 600px) {
-  .css_body{
-    margin-top: 5rem;
-  }
-}
+// // Weniger als 930px
+// @media only screen and (max-width: 930px) {
+//   .css_body{
+//     margin-top: 14%;
+//   }
+// }
+// // Weniger als 600px
+// @media only screen and (max-width: 600px) {
+//   .css_body{
+//     margin-top: 4rem;
+//   }
+// }
 
 div.header-home {
   // border: 1px solid var.$neutral_100;
@@ -77,14 +79,12 @@ main {
 }
 
 footer {
-  // border: 1px solid var.$neutral_100;
-  margin: 10px 0px;
   font-size: 0.7rem;
 }
 
 .link_box {
   margin: auto;
-  padding: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 .link {
@@ -133,7 +133,6 @@ a {
   text-align: center;
 
   margin-top: 10px;
-  margin-bottom: 10px;
 
   position: relative;
 }
@@ -157,7 +156,6 @@ p.title {
 }
 
 p.name {
-  // font-size: 1.71rem;
   margin: 0px;
 }
 
@@ -167,14 +165,14 @@ p.subtitle {
 
   color: var.$neutral_400;
 
-  margin-top: 0px;
-  margin-bottom: 10px;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
 }
 
 p.socialmedia_hinweis {
   color: var.$neutral_400;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
 }
 
 .lastedit {

@@ -24,9 +24,6 @@
       <div class="title_name"><p class="name">{{ site.Params.name }}</p></div>
     </div>
     <p class="subtitle">{{ site.Params.subtitle }}</p>
-    {{ with site.Params.template_hinweis }}
-      <p class="subtitle">{{ . }}</p>
-    {{ end }}
     <p class="socialmedia_hinweis">{{ .Site.Params.socialmedia_hinweis }}</p>
   </div>
 {{ else }}
