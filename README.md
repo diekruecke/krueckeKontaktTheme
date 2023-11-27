@@ -3,8 +3,10 @@
 https://ileriayo.github.io/markdown-badges/
 https://github-readme-stats.vercel.app/
 
+![DieKruecke GitHub stats](https://github-readme-stats.vercel.app/api?username=diekruecke&show_icons=true&theme=radical)
+
 <a href="https://github.com/diekruecke">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=diekruecke&show_icons=true?theme=dark" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=diekruecke&show_icons=true?theme=radikal" />
 </a>
 <a href="https://github.com/diekruecke">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=diekruecke&layout=compact" />
