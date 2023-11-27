@@ -20,8 +20,15 @@
 
 3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
 
-4. Ersetze die `config.toml` mit der config Datei: [download a copy]( DOWNLOADLINK https://minhaskamal.github.io/DownGit/#/home ) .
+4. Ersetze die `config.toml` mit der config Datei: [download a copy]( DOWNLOADLINK https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ) .
 
+5. Überprüfe ob der Modul-Import richtig eingetragen ist
+
+  ```yaml
+  [module]
+    [[module.imports]]
+      path = "joly.pw/gohugo-shorturl"
+  ```
 ### Git Submodule aktualisieren
 
   ```shell
@@ -35,14 +42,75 @@
   git rm themes/krueckeKontaktTheme
   ```
 
+## Features
 
-## Configuration
+#### Buttons
 
-Kontaktdaten vor Bot's verstecken  
+  ```markdown
+  EMail
+  {{< kontakt_button_hidden type="email" href="deine@email.de" text="E-Mail" >}}
 
-    ```go
-    {{< cloakemail "jane.doe@example.com" >}}
-    ```
+  Telefon
+  {{< kontakt_button_hidden type="phone" protocol="tel" href="+1234567890123" text="Mobile" >}}
+
+  Whatsapp
+  {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
+
+  Instagram
+  {{< kontakt_button type="instagram" href="/l/insta" text="Instagram" >}}
+
+  Discord
+  {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
+
+  Facebook
+  {{< kontakt_button type="facebook" href="/l/fb" text="Facebook" >}}
+
+  Twitch
+  {{< kontakt_button type="twitch" href="/l/tw" text="Twitch" >}}
+
+  Youtube
+  {{< kontakt_button type="youtube" href="/l/yt" text="Youtube" >}}
+
+  VCard Download
+  {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
+
+  Link
+  {{< kontakt_button type="link" href="https://www.diekruecke.de/" text="Private Kontaktdaten" >}}
+  {{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}
+  ```
+
+##### V-Card Download - Abhängig von UserPlattform
+
+###### Code Block
+  ```markdown
+  VCard Download
+  {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
+  ```
+
+###### V-Card Speicherort
+
+  VCard für Apple Systeme (iPhone, iPad, iPod, Mac)
+  ```markdown
+  /vcard/robin_schroeter_apple.vcf
+  ```
+
+  VCard für alle sonstigen Systeme (Windows, Android, alles was nicht als Apple erkannt wird)
+  ```markdown
+  /vcard/robin_schroeter.vcf
+  ```
+
+### Kontaktdaten vor Bot's verstecken  
+
+#### In Markdown Dateien
+EMail Adressen:
+  ```go
+  {{< data_hide "deine@email.de" >}}  
+  ```
+
+Telefonnummern
+  ```go
+  {{< data_hide address="+49 123 456 789 00" protocol="tel" >}}  
+  ```
 
 ### Optional parameters
 
