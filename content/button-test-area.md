@@ -5,8 +5,20 @@ draft = true
 +++
 
 <style>
-  .lastedit {
+  .lastedit, .subtitle, .template_hinweis {
     text-align: center;
+  }
+  .link-email_down, .link-phone_down, .link-contact_down {
+    background: blue;
+  }
+  .link-email_full_down, .link-phone_full_down, .link-contact_full_down {
+    background: green;
+  }
+  .link-email_circle_down, .link-phone_circle_down, .link-contact_circle_down {
+    background: darkorange;
+  }
+  .link-email_circle_full_down, .link-phone_circle_full_down, .link-contact_circle_full_down {
+    background: grey;
   }
 </style>
 

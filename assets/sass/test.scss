@@ -1,13 +1,21 @@
 
-.link-email_down, .link-phone_down, .link-contact_down {
-  background-color: blue;
+.link-contact_full_down {
+  background-color: rgb(0,0,255);
+  background: linear-gradient(45deg, rgba(0,0,255,1) 0%, rgba(0,112,255,1) 50%, rgba(0,151,255,1) 100%);
 }
-.link-email_full_down, .link-phone_full_down, .link-contact_full_down {
-  background-color: green;
+
+.link-email_full_down {
+  background-color: #0097ff;
+  background: linear-gradient(90deg,#0097ff 0%,#0070ff 50%,#00f 100%);
 }
-.link-email_circle_down, .link-phone_circle_down, .link-contact_circle_down {
-  background-color: darkorange;
+
+.link-phone_full_down {
+  background-color: #45d82c;
+  background: linear-gradient(120deg,#45d82c,#12990b);
 }
-.link-email_circle_full_down, .link-phone_circle_full_down, .link-contact_circle_full_down {
-  background-color: grey;
-}
+
+.link-link {
+  background: #e52d27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }

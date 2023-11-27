@@ -11,4 +11,4 @@ draft = false
 {{< kontakt_button type="discord" href="/l/dc" text="Discord" >}}
 {{< kontakt_button_vcard type="contact_full_down" text="Kontakt Speichern" >}}
 {{< kontakt_button type="kontaktpage" href="https://www.diekruecke.de" text="Business Kontaktdaten" >}}
-{{< kontakt_button type="kontaktpage" href="/button-test-area" text="Button Test Area" >}}
+{{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}

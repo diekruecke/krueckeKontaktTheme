@@ -1,6 +1,11 @@
 {{ define "main" }}
   <div class="single_page">
-    <h1>{{ .Title }}</h1>
+    <h1 class="template_hinweis">{{ .Title }}</h1>
+
+    {{ with site.Params.template_hinweis }}
+      <p class="subtitle">{{ . }}</p>
+    {{ end }}
+
     {{ .Content }}
 
     <p class="lastedit">
