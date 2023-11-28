@@ -6,6 +6,9 @@
 1. Hugo Mod init
 
    ```zsh
+
+   hugo new site . --force
+   
    hugo mod init github.com/diekruecke/krueckeKontaktTheme
 
    hugo mod get -u -v joly.pw/gohugo-shorturl
