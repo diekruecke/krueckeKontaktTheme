@@ -5,7 +5,7 @@
 
 1. Hugo Mod init
 
-   ```shell
+   ```zsh
    hugo mod init github.com/diekruecke/krueckeKontaktTheme
 
    hugo mod get -u -v joly.pw/gohugo-shorturl
@@ -13,7 +13,7 @@
 
 2. Git Submodule init
 
-   ```bash
+   ```zsh
    git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
    ```
 
@@ -52,11 +52,9 @@ git rm themes/krueckeKontaktTheme
 
 ## Buttons
 
-**Standard Buttons**
-<details>
-<summary>show / hide</summary>
+Standard Buttons
 
-```go
+```md
 Whatsapp
 {{< kontakt_button type="whatsapp" href="/l/wa" text="Whatsapp" >}}
 
@@ -79,40 +77,35 @@ Link
 {{< kontakt_button type="link" href="https://www.diekruecke.de/" text="Private Kontaktdaten" >}}
 {{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}
 ```
-</details>
 
 ### EMail & Telefon -> Bot Sicher
-<details>
-<summary>show / hide</summary>
 
-```toml
+```md
 EMail 
 {{< kontakt_button_hidden type="email" href="deine@email.de" text="E-Mail" >}}
 
 Telefon
 {{< kontakt_button_hidden type="phone" protocol="tel" href="+1234567890123" text="Mobile" >}}
 ```
-</details>
 
 ### V-Card
-<details>
-<summary>show / hide</summary>
 
-```go
+```md
 {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
 ```
 
-#### V-Card Speicherort
-
+<details>
+<summary>V-Card Speicherort</summary>
+   
 - VCard für Apple Systeme (iPhone, iPad, iPod, Mac)
 
-  ```markdown
+  ```
   /vcard/robin_schroeter_apple.vcf
   ```
 
 - VCard für alle sonstigen Systeme (Windows, Android, alles was nicht als Apple erkannt wird)
 
-  ```markdown
+  ```
   /vcard/robin_schroeter.vcf
   ```
 
@@ -120,24 +113,28 @@ Telefon
 
 ---
 
-### Kontaktdaten vor Bot's verstecken  
+### EMail & Telefon -> Bot Sicher - ohne Button
 
-#### In Markdown Dateien
 EMail Adressen:
 
-```go
+```md
 {{< data_hide "deine@email.de" >}}  
 ```
 
 Telefonnummern
 
-```go
+```md
 {{< data_hide address="+49 123 456 789 00" protocol="tel" >}}  
 ```
 
-### Optional parameters
+---
 
-```
+### Optionale Dinge
+
+<details>
+<summary>Template für neue SVG Dateien</summary>
+
+```svg
 <svg viewBox="0 0 XX_width_XX XX_height_XX" class="apple_svg" version="1.1" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg">
   <g fill="currentColor">
     <path d="XXX"/>
@@ -145,3 +142,6 @@ Telefonnummern
   </g>
 </svg>
 ```
+
+</details>
+
