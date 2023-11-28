@@ -23,10 +23,9 @@
 
 5. Überprüfe ob der Modul-Import richtig eingetragen ist
 
-   ```yaml
-   [module]
-     [[module.imports]]
-       path = "joly.pw/gohugo-shorturl"
+   ```toml
+   [[imports]]
+   path = "joly.pw/gohugo-shorturl"
    ```
 
 ---
@@ -125,14 +124,16 @@ Telefon
 
 #### In Markdown Dateien
 EMail Adressen:
-  ```go
-  {{< data_hide "deine@email.de" >}}  
-  ```
+
+```go
+{{< data_hide "deine@email.de" >}}  
+```
 
 Telefonnummern
-  ```go
-  {{< data_hide address="+49 123 456 789 00" protocol="tel" >}}  
-  ```
+
+```go
+{{< data_hide address="+49 123 456 789 00" protocol="tel" >}}  
+```
 
 ### Optional parameters
 
