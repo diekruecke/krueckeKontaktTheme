@@ -1,25 +1,21 @@
-# krueckeKontaktTheme
+# krueckeKontaktTheme - Hugo Theme
 
-https://ileriayo.github.io/markdown-badges/  
-https://github-readme-stats.vercel.app/
-
-![DieKruecke GitHub stats](https://github-readme-stats.vercel.app/api?username=diekruecke&show_icons=true&theme=dark)
 
 ## Installation / Einrichtung
 
 1. Hugo Mod init
 
-    ```shell
-    hugo mod init github.com/diekruecke/krueckeKontaktTheme
+   ```shell
+   hugo mod init github.com/diekruecke/krueckeKontaktTheme
 
-    hugo mod get -u -v joly.pw/gohugo-shorturl
-    ```
+   hugo mod get -u -v joly.pw/gohugo-shorturl
+   ```
 
 2. Git Submodule init
 
-    ```bash
-    git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
-    ```
+   ```bash
+   git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
+   ```
 
 3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
 
@@ -27,11 +23,13 @@ https://github-readme-stats.vercel.app/
 
 5. Überprüfe ob der Modul-Import richtig eingetragen ist
 
-    ```yaml
-    [module]
-      [[module.imports]]
-        path = "joly.pw/gohugo-shorturl"
-    ```
+   ```yaml
+   [module]
+     [[module.imports]]
+       path = "joly.pw/gohugo-shorturl"
+   ```
+
+---
 
 ## Terminal
 
@@ -51,9 +49,11 @@ git submodule deinit themes/krueckeKontaktTheme
 git rm themes/krueckeKontaktTheme
 ```
 
+---
+
 ## Buttons
 
-### Standard Buttons
+**Standard Buttons**
 <details>
 <summary>show / hide</summary>
 
@@ -99,30 +99,27 @@ Telefon
 <details>
 <summary>show / hide</summary>
 
-#### Code Block
 ```go
 {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
 ```
 
 #### V-Card Speicherort
 
-<details>
-<summary>VCard für Apple Systeme (iPhone, iPad, iPod, Mac)</summary>
-```markdown
-/vcard/robin_schroeter_apple.vcf
-```
-</details>
+- VCard für Apple Systeme (iPhone, iPad, iPod, Mac)
 
-<details>
-<summary>VCard für alle sonstigen Systeme (Windows, Android, alles was nicht als Apple erkannt wird)</summary>
-```markdown
-/vcard/robin_schroeter.vcf
-```
-</details>
+  ```markdown
+  /vcard/robin_schroeter_apple.vcf
+  ```
+
+- VCard für alle sonstigen Systeme (Windows, Android, alles was nicht als Apple erkannt wird)
+
+  ```markdown
+  /vcard/robin_schroeter.vcf
+  ```
 
 </details>
 
-
+---
 
 ### Kontaktdaten vor Bot's verstecken  
 
