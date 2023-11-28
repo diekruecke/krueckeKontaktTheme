@@ -27,8 +27,8 @@
 5. Überprüfe ob der Modul-Import richtig eingetragen ist
 
    ```toml
-   [[imports]]
-   path = "joly.pw/gohugo-shorturl"
+   [[module.imports]]
+      path = "joly.pw/gohugo-shorturl"
    ```
 
 ---
