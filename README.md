@@ -1,35 +1,28 @@
 # krueckeKontaktTheme - Hugo Theme
 
-
 ## Installation / Einrichtung
 
 1. Hugo Mod init
 
    ```zsh
 
-   hugo new site . --force
-   
    hugo mod init github.com/diekruecke/krueckeKontaktTheme
-
-   hugo mod get -u -v joly.pw/gohugo-shorturl
    ```
 
-2. Git Submodule init
+2. Hugo Modul-Imports in die Config rein
 
-   ```zsh
-   git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
+   ```toml
+   [module]
+   [[module.imports]]
+      path = "joly.pw/gohugo-shorturl"
+   [[module.imports]]
+      path = "github.com/diekruecke/krueckeKontaktTheme"
    ```
 
 3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
 
 4. Ersetze die `config.toml` mit der config Datei: [DOWNLOAD]( https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ).
 
-5. Überprüfe ob der Modul-Import richtig eingetragen ist
-
-   ```toml
-   [[module.imports]]
-      path = "joly.pw/gohugo-shorturl"
-   ```
 
 ---
 
@@ -40,15 +33,9 @@ Starte lokalen DEV Server inkl. Erreichbarkeit via LAN
 hugo server --bind 0.0.0.0 
 ```
 
-Git Submodule aktualisieren
+Hugo Module aktualisieren
 ```zsh
-git submodule update --remote  
-```
-
-Git Submodule deinstallieren
-```zsh
-git submodule deinit themes/krueckeKontaktTheme
-git rm themes/krueckeKontaktTheme
+hugo mod get -u
 ```
 
 ---
