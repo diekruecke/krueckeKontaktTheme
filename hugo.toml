@@ -2,9 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'de-DE'
 title = 'DieKruecke'
 
-# auskommentieren
-# theme = "krueckeKontaktTheme"
-
 enableEmoji = false
 disableKinds = ["taxonomy", "term"]
 

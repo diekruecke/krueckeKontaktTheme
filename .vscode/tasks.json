@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Git Submodule update",
+      "label": "start Hugo Server",
       "type": "shell",
-      "command": "git submodule update --remote",
+      "command": "hugo server --bind 0.0.0.0",
       "group": "none",
       "presentation": {
         "reveal": "always",
@@ -13,9 +13,9 @@
       }
     },
     {
-      "label": "start Hugo Server",
+      "label": "Hugo Module update",
       "type": "shell",
-      "command": "hugo server --bind 0.0.0.0",
+      "command": "hugo mod get -u",
       "group": "none",
       "presentation": {
         "reveal": "always",

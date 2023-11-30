@@ -21,7 +21,7 @@
 
 3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
 
-4. Ersetze die `config.toml` mit der config Datei: [DOWNLOAD]( https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ).
+4. Vervollständige die `hugo.yml` mit folgender Beispiel Datei: [DOWNLOAD]( https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ).
 
 
 ---
