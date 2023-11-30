@@ -20,6 +20,11 @@ buildDrafts = true
   # change to false
   template_hinweis = true
 
+[params.plausible]
+  enable = false
+  domain = "kontakt.diekruecke.de"
+  gitstar = false
+
 [params.style]
   primary= "#2563eb"
   secondary= "#ea580c"
@@ -43,6 +48,8 @@ buildDrafts = true
 
   [[module.imports]]
     path = "joly.pw/gohugo-shorturl"
+  [[module.imports]]
+      path = "github.com/divinerites/plausible-hugo"
 
 [markup.highlight]
   noClasses = false
