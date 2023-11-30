@@ -23,5 +23,3 @@ Name und Sitz des Versicherers:
 VDMV GmbH Kronenstr. 14 30161 Hannover  
 Geltungsraum der Versicherung:  
 Weltweit
-
-> Ich bin eine wundervolle Testnachricht

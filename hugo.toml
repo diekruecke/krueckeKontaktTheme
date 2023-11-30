@@ -27,7 +27,7 @@ buildDrafts = true
   gitstar = false
   outbound_link = true
   file_downloads = true
-  file_downloads_types = ".vcf"
+  file_downloads_types = "vcf"
 
 [params.style]
   primary= "#2563eb"
