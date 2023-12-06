@@ -1,0 +1,4 @@
+github.com/divinerites/plausible-hugo v1.19.2 h1:Ksd1Ewp53gPmzm6vhDdRUxkUYwigaykhZlzOYzHYCzQ=
+github.com/divinerites/plausible-hugo v1.19.2/go.mod h1:cxr+YB3FUwbLon8KCs4pV4Ankbkq6lJxTQUpNb5KqPo=
+joly.pw/gohugo-shorturl v0.0.0-20230430132502-3ceed76b8c44 h1:FwWMidFitUeRi1EgyrX03M9+qrfIdDtpM/rMhGuheos=
+joly.pw/gohugo-shorturl v0.0.0-20230430132502-3ceed76b8c44/go.mod h1:MaNHclxcSsrB7s4SgJHHJUc8f5cBgRp9HurjqmA16IM=
