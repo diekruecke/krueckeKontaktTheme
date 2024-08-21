@@ -6,7 +6,7 @@ enableEmoji = false
 disableKinds = ["taxonomy", "term"]
 
 enableGitInfo = true
-copyright = "&copy; 2023 DieKruecke | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
+copyright = "&copy; 2024 DieKruecke | [AGB](/diekruecke-agb.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
 
 # set to false
 buildDrafts = true
