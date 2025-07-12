@@ -5,8 +5,10 @@ title = 'DieKruecke'
 enableEmoji = false
 disableKinds = ["taxonomy", "term"]
 
+enableRobotsTXT = true
+
 enableGitInfo = true
-copyright = "&copy; 2024 DieKruecke | [AGB](/diekruecke-agb.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
+copyright = "&copy; 2025 DieKruecke | [AGB](/diekruecke-agb.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
 
 # set to false
 buildDrafts = true
@@ -16,6 +18,7 @@ buildDrafts = true
   name = "Robin Schröter"
   subtitle = "Tontechnik | Touring | Projektleitung"
   socialmedia_hinweis = "SocialMedia wird nicht aktiv genutzt"
+  description = "DieKruecke – professionelle Tontechnik, Touring und Projektleitung für Events jeder Größe. Zuverlässig, erfahren und individuell – jetzt Kontakt aufnehmen!"
 
   # change to false
   template_hinweis = true
