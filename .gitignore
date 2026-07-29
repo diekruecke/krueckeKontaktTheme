@@ -64,4 +64,6 @@ hugo.exe
 hugo.darwin
 hugo.linux
 
+devcontainer-lock.json
+
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Go,OSX,Git,Hugo

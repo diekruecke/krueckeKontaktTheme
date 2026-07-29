@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
 
 enableGitInfo = true
-copyright = "&copy; 2025 DieKruecke | [AGB](/diekruecke-agb.pdf) | [Widerrufsformular](/widerrufsformular.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
+copyright = "&copy; 2026 DieKruecke | [AGB](/diekruecke-agb.pdf) | [Widerrufsformular](/widerrufsformular.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
 
 # set to false
 buildDrafts = true
