@@ -12,6 +12,7 @@ draft = false
 {{< kontakt_button type="facebook" href="/l/fb" text="Facebook" >}}
 {{< kontakt_button type="twitch" href="/l/tw" text="Twitch" >}}
 {{< kontakt_button type="youtube" href="/l/yt" text="Youtube" >}}
+{{< kontakt_button type="teamspeak" href="/l/yt" text="Teamspeak" >}}
 {{< kontakt_button_vcard type="contact" text="Kontakt Speichern" >}}
 {{< kontakt_button type="link" href="https://www.diekruecke.de/" text="Private Kontaktdaten" >}}
 {{< kontakt_button type="link" href="/button-test-area" text="Button Test Area" >}}
