@@ -6,7 +6,7 @@
 
    ```zsh
 
-   hugo mod init github.com/diekruecke/krueckeKontaktTheme
+   hugo mod init github.com/diekruecke/repositoryadresse
    ```
 
 2. Hugo Modul-Imports in die Config rein
@@ -19,9 +19,15 @@
       path = "github.com/diekruecke/krueckeKontaktTheme"
    ```
 
-3. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
+3. Theme als Git Submodul importieren
 
-4. Vervollständige die `hugo.yml` mit folgender Beispiel Datei: [DOWNLOAD]( https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ).
+  ```shell
+  git submodule add https://github.com/diekruecke/krueckeKontaktTheme themes/krueckeKontaktTheme
+  ```
+
+4. Starte den Server mit `hugo server`. Die Module werden automatisch heruntergeladen.
+
+5. Vervollständige die `hugo.yml` mit folgender Beispiel Datei: [DOWNLOAD]( https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/diekruecke/krueckeKontaktTheme/blob/main/hugo.toml ).
 
 
 ---
