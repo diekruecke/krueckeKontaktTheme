@@ -7,8 +7,6 @@ disableKinds = ["taxonomy", "term"]
 
 enableRobotsTXT = true
 
-umamiID = "c29fd3b6-fd32-4113-8d87-2606e7af6aea"
-
 enableGitInfo = true
 copyright = "&copy; 2026 DieKruecke | [AGB](/agb.pdf) | [Widerrufsformular](/widerrufsformular.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
 
@@ -25,11 +23,9 @@ buildDrafts = true
   # change to false
   template_hinweis = true
 
-  enableUmami = true
-
   [params.services]
     [params.services.umami_analytics]
-      id = 'c29fd3b6-fd32-4113-8d87-2606e7af6aea'
+      id = ''
       script_url = 'https://umami.diekruecke.cloud/data.js'
 
 [params.style]
