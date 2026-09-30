@@ -1,0 +1,16 @@
+{{- with site.Params.services.umami_analytics.id }}
+  <script
+    defer
+    src="{{ site.Params.services.umami_analytics.script_url }}"
+    data-website-id="{{ . }}">
+  </script>
+
+  {{- if site.Params.services.umami_analytics.recorder_url }}
+  <script
+    defer
+    src="{{ site.Params.services.umami_analytics.recorder_url }}"
+    data-website-id="{{ . }}">
+  </script>
+  
+  {{- end }}
+{{- end }}

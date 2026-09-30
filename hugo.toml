@@ -7,6 +7,9 @@ disableKinds = ["taxonomy", "term"]
 
 enableRobotsTXT = true
 
+enableUmami = false
+umamiID = "c29fd3b6-fd32-4113-8d87-2606e7af6aea"
+
 enableGitInfo = true
 copyright = "&copy; 2026 DieKruecke | [AGB](/agb.pdf) | [Widerrufsformular](/widerrufsformular.pdf) | [Impressum](/impressum) | [Datenschutzerklärung](/datenschutz)"
 
@@ -23,14 +26,19 @@ buildDrafts = true
   # change to false
   template_hinweis = true
 
-[params.plausible]
-  enable = false
-  domain = "kontakt.diekruecke.de"
-  # selfhosted_domain = "myplausible.example.com"
-  gitstar = false
-  outbound_link = true
-  file_downloads = true
-  file_downloads_types = "vcf"
+[params.services.umami_analytics]
+script_url = "https://umami.your-site.com/script.js"
+# recorder_url = "https://umami.your-site.com/recorder.js"
+id = ""
+
+# [params.plausible]
+#   enable = false
+#   domain = "kontakt.diekruecke.de"
+#   # selfhosted_domain = "myplausible.example.com"
+#   gitstar = false
+#   outbound_link = true
+#   file_downloads = true
+#   file_downloads_types = "vcf"
 
 [params.style]
   primary= "#2563eb"
@@ -55,8 +63,8 @@ buildDrafts = true
 
   [[module.imports]]
     path = "joly.pw/gohugo-shorturl"
-  [[module.imports]]
-      path = "github.com/divinerites/plausible-hugo"
+  # [[module.imports]]
+  #     path = "github.com/divinerites/plausible-hugo"
 
 [markup.highlight]
   noClasses = false

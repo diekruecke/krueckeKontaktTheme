@@ -12,7 +12,9 @@
   </style>
 {{ end }}
 
-{{ partial "plausible_head.html" . }}
+{{- if default true .Params.analyze }}
+  {{ partialCached "umami/js.html" . }}
+{{- end }}
 
 {{- if .IsHome -}}
  <meta name="description" content="{{ site.Params.Description }}" />
