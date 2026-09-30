@@ -1,5 +1,8 @@
 {
   "files.associations": {
     "*.yaml": "home-assistant"
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#ff0000"
   }
 }
