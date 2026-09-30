@@ -27,9 +27,9 @@ buildDrafts = true
   template_hinweis = true
 
 [params.services.umami_analytics]
-script_url = "https://umami.your-site.com/script.js"
-# recorder_url = "https://umami.your-site.com/recorder.js"
-id = ""
+script_url = "https://umami.diekruecke.cloud/script.js"
+recorder_url = "https://umami.diekruecke.cloud/recorder.js"
+id = "c29fd3b6-fd32-4113-8d87-2606e7af6aea"
 
 # [params.plausible]
 #   enable = false
