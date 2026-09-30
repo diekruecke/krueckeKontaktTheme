@@ -30,13 +30,7 @@ buildDrafts = true
   [params.services]
     [params.services.umami_analytics]
       id = 'c29fd3b6-fd32-4113-8d87-2606e7af6aea'
-      script_url = 'https://umami.diekruecke.cloud/script.js'
-
-
-# [params.services.umami_analytics]
-#   script_url = "https://umami.diekruecke.cloud/script.js"
-#   recorder_url = "https://umami.diekruecke.cloud/recorder.js"
-#   id = "c29fd3b6-fd32-4113-8d87-2606e7af6aea"
+      script_url = 'https://umami.diekruecke.cloud/data.js'
 
 [params.style]
   primary= "#2563eb"
