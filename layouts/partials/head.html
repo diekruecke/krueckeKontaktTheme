@@ -12,14 +12,6 @@
   </style>
 {{ end }}
 
-{{ with site.Params.enableUmami }}
-  <script defer src="https://umami.diekruecke.cloud/script.js" data-website-id="c29fd3b6-fd32-4113-8d87-2606e7af6aea"></script>
-{{ end }}
-
-{{- if default true .Params.analyze }}
-  {{ partialCached "umami/js.html" . }}
-{{- end }}
-
 {{- if .IsHome -}}
  <meta name="description" content="{{ site.Params.Description }}" />
 {{- else -}}
