@@ -27,10 +27,16 @@ buildDrafts = true
 
   enableUmami = true
 
-[params.services.umami_analytics]
-  script_url = "https://umami.diekruecke.cloud/script.js"
-  recorder_url = "https://umami.diekruecke.cloud/recorder.js"
-  id = "c29fd3b6-fd32-4113-8d87-2606e7af6aea"
+  [params.services]
+    [params.services.umami_analytics]
+      id = 'c29fd3b6-fd32-4113-8d87-2606e7af6aea'
+      script_url = 'https://umami.diekruecke.cloud/script.js'
+
+
+# [params.services.umami_analytics]
+#   script_url = "https://umami.diekruecke.cloud/script.js"
+#   recorder_url = "https://umami.diekruecke.cloud/recorder.js"
+#   id = "c29fd3b6-fd32-4113-8d87-2606e7af6aea"
 
 [params.style]
   primary= "#2563eb"
@@ -51,10 +57,14 @@ buildDrafts = true
 [module]
   [module.hugoVersion]
     extended = true
-    min = "v0.120.4"
+    min = "0.148.1"
 
   [[module.imports]]
     path = "joly.pw/gohugo-shorturl"
+
+  [[module.imports]]
+    path = 'github.com/hugomods/umami-analytics'
+
 
 [markup.highlight]
   noClasses = false
