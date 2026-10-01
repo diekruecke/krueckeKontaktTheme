@@ -23,6 +23,7 @@
   target="{{ $target }}"
   {{ with $title }}title="{{ . }}"{{ end }}
   rel="me noopener noreferrer"
+  data-umami-event="{{ $type }}_button"
 >
   {{- with $icon -}}
     <span class='icon-mr1'>{{ partial "icon.html" . }}</span>

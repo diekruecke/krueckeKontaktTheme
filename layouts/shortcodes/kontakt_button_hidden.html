@@ -48,6 +48,8 @@
     link.className = "link link-{{ $type }}";
   
     link.rel = "me noopener noreferrer";
+
+    link.setAttribute("data-umami-event", "{{ $type }}_button");
   
     scriptTag.parentElement.insertBefore(link, scriptTag.previousElementSibling);
     scriptTag.parentElement.removeChild(scriptTag.previousElementSibling);
